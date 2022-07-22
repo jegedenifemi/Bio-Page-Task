@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Contact Me</title>
+    <script
+      src="https://kit.fontawesome.com/38b01a18a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .landing {
+        height: 5rem;
+        margin-bottom: 4rem;
+      }
+
+      h1 {
+        margin: 0 auto;
+      }
+
+      [type="text"],
+      [type="email"] {
+        width: 100%;
+        height: 2rem;
+        margin-bottom: 0.8rem;
+      }
+
+      label > h4 {
+        margin-bottom: -1.5rem;
+      }
+
+      input:invalid:focus {
+        background-color: pink;
+      }
+
+      textarea {
+        resize: none;
+        width: 100%;
+      }
+
+      .contactme {
+        height: fit-content;
+        text-align: center;
+      }
+
+      .contactpagelnks {
+        max-width: fit-content;
+        margin: 0 auto;
+      }
+      .contactpagelnks > a {
+        padding: 0.7rem 1.5rem;
+        background-color: #27784b;
+        border-radius: 0.4rem;
+        display: inline-block;
+        margin-top: 0.4rem;
+      }
+
+      footer {
+        margin-top: 4rem;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        [type="text"],
+        [type="email"] {
+          height: 1.5rem;
+        }
+
+        label > h4 {
+          margin-bottom: -1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <!--Navigation Links-->
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+      <div class="landing">
+        <h1>Get In Touch</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- Leave A Message -->
+      <section class="skills">
+        <div class="hp-card hp-card3">
+          <h2>Leave A Message</h2>
+          <form action="#">
+            <label for="name">
+              <h4>Name:</h4>
+            </label>
+            <br />
+            <input
+              type="text"
+              minlength="3"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              required
+            />
+            <br />
+
+            <label for="email">
+              <h4>Email:</h4>
+            </label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              required
+            />
+            <br />
+
+            <label for="message">
+              <h4>Message:</h4>
+            </label>
+            <br />
+            <textarea
+              id="message"
+              name="message"
+              cols="30"
+              rows="5"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+            <br />
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section class="contactme">
+        <h4>(+234)7012345678</h4>
+        <h4>jegedenifemi24@gmail.com</h4>
+        <h4>34 Jameson Avenue, London OHIO</h4>
+      </section>
+
+      <div class="contactpagelnks">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Designed & Dev. by</p>
+      <h4>Jegede Oluwanifemi (2022)</h4>
+      <div class="sm-icons">
+        <a href="https://twitter.com/jegedenifemi"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://github.com/jegedenifemi"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
